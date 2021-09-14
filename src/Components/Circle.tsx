@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { GameState } from './interfaces'
+import { GameState } from '../interfaces'
 
 type Props = {
     number:    string;

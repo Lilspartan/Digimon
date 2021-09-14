@@ -1,6 +1,6 @@
 import React, {useState, useContext, useCallback, useEffect} from 'react';
 import {SocketContext} from '../context/socket';
-import Circle from '../Circle'
+import Circle from '../Components/Circle'
 import { GameState } from '../interfaces'
 
 const Gauge = () => {

@@ -1,10 +1,11 @@
 import React, {useState, useContext, useEffect} from 'react';
 import {SocketContext} from '../context/socket';
-import Circle from '../Circle'
-import '../index.css'
-import { withRouter, useParams } from 'react-router-dom'
-import MemoryLink from '../MemoryLink'
-import { GameState } from '../interfaces'
+import Circle from '../Components/Circle';
+import '../index.css';
+import { withRouter, useParams } from 'react-router-dom';
+import MemoryLink from '../Components/MemoryLink';
+import { GameState } from '../interfaces';
+import Menu from '../icons/Menu';
 
 type Props = {
     location: any
@@ -12,7 +13,7 @@ type Props = {
 
 const Client = (props: Props) => {
     const socket = useContext(SocketContext);
-    const player = props.location?.pathname.substring(1)
+    const player = props.location?.pathname.substring(1);
     const [showMenu, setShowMenu] = useState(false);
     const [menuSide, setMenuSide] = useState<"right" | "left">("right");
     const [gameState, setgameState] = useState<GameState>({

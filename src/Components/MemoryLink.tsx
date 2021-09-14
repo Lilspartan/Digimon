@@ -1,4 +1,4 @@
-import { GameState } from './interfaces'
+import { GameState } from '../interfaces'
 
 type Props = {
     amount: number;
