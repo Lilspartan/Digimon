@@ -139,3 +139,23 @@ body {
   text-align: center;
   font-family: 'Staatliches', cursive;
 }
+
+.big-select-button {
+	transition: 0.5s all;
+	color: white;
+	text-decoration: none;
+	padding: 0px 5px;
+	border: 0px solid rgba(255,255,255,0);
+	border-radius: 0px;
+	margin: 10vh;
+}
+
+.big-select-button:hover {
+	border: 10px solid white;
+	border-radius: 30px;
+	padding: 10px 20px;
+}
+
+#main-menu {
+	margin-top: 10vh;
+}
